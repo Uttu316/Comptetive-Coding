@@ -1,0 +1,9 @@
+import java.time.LocalDate;
+public class Solution {
+    public static String getDay(String day, String month, String year) {
+        int dd = Integer.parseInt(day);
+        int mm = Integer.parseInt(month);
+        int yy = Integer.parseInt(year);
+      LocalDate dt = LocalDate.of(yy, mm, dd);
+return(String.valueOf(dt.getDayOfWeek()));
+    }
