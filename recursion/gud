@@ -1,0 +1,19 @@
+def fun(l,n):
+    d = {0:[0,1]}
+    xor = 0
+    count =0
+    for i in range(n):
+        xor^=l[i]
+        if(xor not in d):
+            d[0]
+        count+=d[xor][1]*(i)-d[xor][0]
+        d[xor][0]+=i
+        d[xor][1]+=1
+    print(count)
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    l = list(map(int,input().rstrip().split()))
+    fun(l,n)
+'''l = {0:[0,1]}
+print(l[0][0])'''
